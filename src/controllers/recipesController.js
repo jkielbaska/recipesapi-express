@@ -28,7 +28,6 @@ const getSingleRecipe = async (req, res) => {
   }
 };
 
-// obsluga bledu zlych pol
 const createNewRecipe = async (req, res) => {
   try {
     const recipe = await createRecipe(req.body);
@@ -38,7 +37,6 @@ const createNewRecipe = async (req, res) => {
   }
 };
 
-// obsluga bledu zlych pol
 const updateExistRecipe = async (req, res) => {
   try {
     const { id } = req.params;
